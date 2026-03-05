@@ -1,0 +1,58 @@
+﻿@model EmployeePortalApp.models.empData
+<html>
+	<head>
+		<body>
+
+			<h2>Employee Details</h2>
+
+		@*  1.ViewBag  *@
+@* 
+<h2>Employee Details</h2>
+
+<label>Full Name: @ViewBag.FullName</label>
+<br />
+
+
+<label>Email: @ViewBag.Email</label>
+<br />
+
+<label>Password: @ViewBag.Password</label>
+<br />
+
+<label>Confirm Password: @ViewBag.ConfirmPassword</label> *@
+
+		@* 2.ViewData *@
+
+		@* <label>Full Name : @ViewData["FullName"]</label>
+		<br />
+		<label>Email : @ViewData["Email"]</label>
+		<br />
+		<label>Password : @ViewData["Password"]</label>
+		<br />
+		<label>Confirm Password : @ViewData["ConfirmPassword"]</label> *@
+
+		@* 3.List / Normal object *@
+		@* @model List<string>
+			<label>FullName : @Model[0]</label>
+			<br />
+			<label>Email : @Model[1]</label>
+			<br />
+            <label>Password: @Model[2]</label>
+			<br />
+			<label>ConfirmPassword: @Model[3]</label> *@
+
+
+		@* 4. Strongly typed object : Model Binding. *@
+		<div style="text-align:center">
+            <label>FullName : @Model.FullName</label>
+			<br />
+			<label>Email : @Model.Email</label>
+			<br />
+			<label>Password: @Model.Password</label>
+			<br />
+		    <label>ConfirmPassword: @Model.ConfirmPassword</label>
+		</div>
+
+</body>
+</head>
+</html>
